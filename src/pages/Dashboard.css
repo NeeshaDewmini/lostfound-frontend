@@ -1,0 +1,40 @@
+
+
+/* Navbar gradient background */
+.bg-gradient {
+  background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+}
+
+/* Card hover effect */
+.item-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: default;
+}
+.item-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+/* Request button styling */
+.request-btn {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.request-btn:hover {
+  background-color: #6b7294;
+  color: white;
+}
+
+/* Make navbar brand icon and text align nicely */
+.navbar-brand svg {
+  vertical-align: middle;
+  font-size: 1.5rem;
+}
+
+/* Responsive fixes */
+@media (max-width: 575px) {
+  .navbar .d-flex {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
